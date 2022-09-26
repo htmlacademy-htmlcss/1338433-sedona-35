@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Денис Шмелёв](https://up.htmlacademy.ru/htmlcss/35/user/1338433)
-* Наставник: [Nadiia Derevianchenko](https://htmlacademy.ru/profile/nadiia)
+* Наставник: [Ирина Антипина](https://htmlacademy.ru/profile/id2108789)
 
 ---
 
