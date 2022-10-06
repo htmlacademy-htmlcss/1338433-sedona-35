@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -15,7 +16,7 @@
             <a class="navigation-link" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="about.html">О Седоне</a>
+            <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link">Гостиницы</a>
@@ -40,9 +41,7 @@
           </li>
           <li class="navigation-item">
             <a class="button button-click" href="#">
-              <span class="visually-hidden">
                 Хочу сюда!
-              </span>
             </a>
           </li>
         </ul>
@@ -55,7 +54,7 @@
             <ol class="breadcrumbs">
                 <li class="breadcrumbs-item">
                     <a class="breadcrumbs-link" href="index.html">
-                        <img class="breadcrumbs-icon" src="#" alt="Лого главной страницы">
+                        <img class="breadcrumbs-icon" src="images/icons/home-catalog.svg" alt="Лого главной страницы">
                     </a>
                 </li>
                 <li class="breadcrumbs-item">
@@ -71,19 +70,13 @@
             <legend class="catalog-filter-title">Инфраструктура</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="infrastructure" value="pool" checked="checked">Бассейн
-                </label>
+                  <input class="control-input" type="checkbox" name="pool" checked="checked">Бассейн
               </li>
               <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="infrastructure" value="parking" checked="checked">Парковка
-                </label>
+                  <input class="control-input" type="checkbox" name="parking" checked="checked">Парковка
               </li>
               <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="infrastructure" value="wifi">Wi-Fi
-                </label>
+                  <input class="control-input" type="checkbox" name="wifi">Wi-Fi
               </li>
             </ul>
           </fieldset>
@@ -92,19 +85,13 @@
             <legend class="catalog-filter-title">Тип Жилья:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
-                <label class="control">
                   <input class="control-input" type="radio" name="housing" value="hostel" checked="checked">Гостиница
-                </label>
               </li>
               <li class="catalog-filter-item">
-                <label class="control">
                   <input class="control-input" type="radio" name="housing" value="motel">Мотель
-                </label>
               </li>
               <li class="catalog-filter-item">
-                <label class="control">
                   <input class="control-input" type="radio" name="housing" value="apartment">Апартаменты
-                </label>
               </li>
             </ul>
           </fieldset>
@@ -112,9 +99,9 @@
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость, ₽:</legend>
             <div class="catalog-filter-price">
-              <label class="visually-hidden" for="catalog-filter-from">от</label>
+              <label for="catalog-filter-from">от</label>
               <input class="catalog-filter-text" type="text" value="0" id="catalog-filter-from">
-              <label class="visually-hidden" for="catalog-filter-to">до</label>
+              <label for="catalog-filter-to">до</label>
               <input class="catalog-filter-text" type="text" value="9000" id="catalog-filter-to">
             </div>
           </fieldset>
@@ -145,7 +132,7 @@
             <ul class="hotel-list">
               <li class="hotel-card">
                 <a class="hotel-card-link" href="#">
-                  <img class="hotel-card-image" src="images/hotel-1.jpg" alt="Гостиница Amara Resort & Spa" width="300" height="212">
+                  <img class="hotel-card-image" src="images/hotels/hotel-1.jpg" alt="Гостиница Amara Resort & Spa" width="300" height="212">
                   <h3 class="hotel-card-title">Amara Resort & Spa</h3>
                 </a>
                 <span class="hotel-type">Гостиница</span>
@@ -157,7 +144,7 @@
 
               <li class="hotel-card">
                 <a class="hotel-card-link" href="#">
-                  <img class="hotel-card-image" src="images/hotel-2.jpg" alt="Гостиница Villas at Poco Diablo" width="300" height="212" >
+                  <img class="hotel-card-image" src="images/hotels/hotel-2.jpg" alt="Гостиница Villas at Poco Diablo" width="300" height="212" >
                   <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
                 </a>
                 <span class="hotel-type">Гостиница</span>
@@ -169,7 +156,7 @@
 
               <li class="hotel-card">
                 <a class="hotel-card-link" href="#">
-                  <img class="hotel-card-image" src="images/hotel-3.jpg" alt="Гостиница Desert Quail Inn" width="300" height="212">
+                  <img class="hotel-card-image" src="images/hotels/hotel-3.jpg" alt="Гостиница Desert Quail Inn" width="300" height="212">
                   <h3 class="hotel-card-title">Desert Quail Inn</h3>
                 </a>
                 <span class="hotel-type">Гостиница</span>
@@ -181,7 +168,7 @@
 
               <li class="hotel-card">
                 <a class="hotel-card-link" href="#">
-                  <img class="hotel-card-image" src="images/hotel-4.jpg" alt="Гостиница GreenTree Inn" width="300" height="212">
+                  <img class="hotel-card-image" src="images/hotels/hotel-4.jpg" alt="Гостиница GreenTree Inn" width="300" height="212">
                   <h3 class="hotel-card-title">GreenTree Inn</h3>
                 </a>
                 <span class="hotel-type">Гостиница</span>
@@ -219,7 +206,7 @@
           <p class="newsletter-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="newsletter">E-mail</label>
-            <input type="email" placeholder="Ваш e-mail" name="newsletter-email" id="newsletter" required>
+            <input class="newsletter-input" type="email" placeholder="Ваш e-mail" name="newsletter-email" id="newsletter" required>
             <button class="button button-subscribe" type="submit">Подписаться</button>
           </form>
         </section>
@@ -230,21 +217,18 @@
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="footer-social-list">
             <li class="footer-social-item">
-              <a href="https://vk.com/htmlacademy" class="social-link">
+              <a class="social-link" href="https://vk.com/htmlacademy" >
                 <span class="visually-hidden">Вконтакте</span>
-                <img class="social-image" src="#" alt="Вконтакте">
               </a>
             </li>
             <li class="footer-social-item">
-              <a href="https://t.me/htmlacademy" class="social-link">
+              <a class="social-link" href="https://t.me/htmlacademy" >
                 <span class="visually-hidden">Телеграм</span>
-                <img class="social-image" src="#" alt="Телеграм">
               </a>
             </li>
             <li class="footer-social-item">
-              <a href="https://www.youtube.com/user/htmlacademyru" class="social-link">
+              <a class="social-link" href="https://www.youtube.com/user/htmlacademyru" >
                 <span class="visually-hidden">Ютуб</span>
-                <img class="social-image" src="#" alt="Ютуб">
               </a>
             </li>
           </ul>
@@ -256,8 +240,8 @@
           </address>
         </section>
         <section class="footer-logo">
-          <a href="https://htmlacademy.ru/">
-            <img class="logo" src="images/icons/footer logo.svg" width="114.9" height="32.9" alt="Логотип html.academy">
+          <a class="footer-logo-link" href="https://htmlacademy.ru/">
+            <img class="logo" src="images/icons/footer logo.svg" width="115" height="33" alt="Логотип html.academy">
           </a>
         </section>
       </footer>

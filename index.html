@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -36,13 +37,12 @@
               <span class="visually-hidden">
                 Понравилось
               </span>
+              <span class="favorite-count">12</span>
             </a>
           </li>
           <li class="navigation-item">
             <a class="button button-click" href="#">
-              <span class="visually-hidden">
                 Хочу сюда!
-              </span>
             </a>
           </li>
         </ul>
@@ -52,7 +52,10 @@
     <main class="main-index">
       <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
       <section class="welcome">
-        <img class="welcome-sedona" width="458" height="352" src="images/welcome sedona.png" alt="Добро пожаловать в Седону!">
+        <img class="welcome-sedona" width="458" height="352" src="images/welcome-sedona.png" alt="Добро пожаловать в Седону!">
+      </section>
+
+      <section class="sedona-town">
         <h2 class="sedona-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p class="sedona-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
@@ -63,7 +66,7 @@
           <li class="reasons-item">
             <h3 class="reasons-title">Настоящий городок</h3>
             <p class="reasons-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            <img class="reasons-image" src="images/real town.jpg" alt="Улочка в Седоне" width="800" height="384">
+            <img class="reasons-image" src="images/real-town.jpg" alt="Улочка в Седоне" width="800" height="384">
           </li>
           <li class="reasons-item">
             <h3 class="reasons-title">Небольшая площадь</h3>
@@ -78,7 +81,7 @@
             <p class="reasons-description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
           <li class="reasons-item">
-            <img class="reasons-image" src="images/bridge devil.jpg" alt="Вид на мост дьявола" width="800" height="384">
+            <img class="reasons-image" src="images/bridge-devil.jpg" alt="Вид на мост дьявола" width="800" height="384">
             <h3 class="reasons-title">Там есть мост дьявола</h3>
             <p class="reasons-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </li>
@@ -100,7 +103,9 @@
       <section class="hotel">
         <h2 class="hotel-title">Заинтересовались?</h2>
         <p class="hotel-subtitle">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a href="catalog.html" class="button button-search">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+        <div class="button-wrapper">
+          <a class="button button-search" href="catalog.html">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+        </div>
       </section>
 
       <section class="newsletter">
@@ -108,7 +113,7 @@
         <p class="newsletter-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="newsletter">E-mail</label>
-          <input type="email" placeholder="Ваш e-mail" name="newsletter-email" id="newsletter" required>
+          <input class="newsletter-input" type="email" placeholder="Ваш e-mail" name="newsletter-email" id="newsletter" required>
           <button class="button button-subscribe" type="submit">Подписаться</button>
         </form>
       </section>
@@ -119,21 +124,18 @@
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a href="https://vk.com/htmlacademy" class="social-link">
+            <a class="social-link" href="https://vk.com/htmlacademy" >
               <span class="visually-hidden">Вконтакте</span>
-              <img class="social-image" src="#" alt="Вконтакте">
             </a>
           </li>
           <li class="footer-social-item">
-            <a href="https://t.me/htmlacademy" class="social-link">
+            <a class="social-link" href="https://t.me/htmlacademy" >
               <span class="visually-hidden">Телеграм</span>
-              <img class="social-image" src="#" alt="Телеграм">
             </a>
           </li>
           <li class="footer-social-item">
-            <a href="https://www.youtube.com/user/htmlacademyru" class="social-link">
+            <a class="social-link" href="https://www.youtube.com/user/htmlacademyru" >
               <span class="visually-hidden">Ютуб</span>
-              <img class="social-image" src="#" alt="Ютуб">
             </a>
           </li>
         </ul>
@@ -147,8 +149,8 @@
       </section>
 
       <section class="footer-logo">
-        <a href="https://htmlacademy.ru/">
-          <img class="page-footer-logo" src="images/icons/footer logo.svg" width="114.9" height="32.9" alt="Логотип html.academy">
+        <a class="footer-logo-link" href="https://htmlacademy.ru/">
+          <img class="page-footer-logo" src="images/icons/footer-logo.png" width="115" height="33" alt="Логотип html.academy">
         </a>
       </section>
     </footer>
