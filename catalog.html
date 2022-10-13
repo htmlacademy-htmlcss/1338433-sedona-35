@@ -6,55 +6,56 @@
     <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
-    <header class="page-header">
-        <a class="navigation-logo" href="index.html">
+    <div class="container">
+      <header class="page-header">
+        <nav class="navigation">
+          <a class="navigation-logo" href="index.html">
             <img class="logo" src="images/icons/logo.png" alt="Логотип Седона" width="139" height="70">
-        </a>
-      <nav class="navigation">
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="index.html">Главная</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">О Седоне</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link">Гостиницы</a>
-          </li>
-        </ul>
-       </nav>
-       <nav class="navigation">
-        <ul class="navigation-user">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">
-                Поиск
-              </span>
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">
-                Понравилось
-              </span>
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a class="button button-click" href="#">
-                Хочу сюда!
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+          </a>
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="navigation-link" href="index.html">Главная</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">О Седоне</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" >Гостиницы</a>
+            </li>
+          </ul>
 
-    <main class="main-catalog">
+          <ul class="navigation-list navigation-user">
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">
+                <span class="visually-hidden">
+                  Поиск
+                </span>
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">
+                <span class="visually-hidden">
+                  Понравилось
+                </span>
+                <span class="favorite-count">12</span>
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a class="button-click" href="#">
+                  Хочу сюда!
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+    <main class="main-catalog main-container">
         <section class="filters">
             <h1 class="main-title">Гостиницы Седоны</h1>
             <ol class="breadcrumbs">
                 <li class="breadcrumbs-item">
                     <a class="breadcrumbs-link" href="index.html">
-                        <img class="breadcrumbs-icon" src="images/icons/home-catalog.svg" alt="Лого главной страницы">
+                        <img class="breadcrumbs-icon" src="images/icons/home-catalog.svg" alt="На главную страницу">
                     </a>
                 </li>
                 <li class="breadcrumbs-item">
@@ -70,13 +71,19 @@
             <legend class="catalog-filter-title">Инфраструктура</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
+                <label class="control">
                   <input class="control-input" type="checkbox" name="pool" checked="checked">Бассейн
+                </label>
               </li>
               <li class="catalog-filter-item">
+                <label class="control">
                   <input class="control-input" type="checkbox" name="parking" checked="checked">Парковка
-              </li>
+                </label>
+                </li>
               <li class="catalog-filter-item">
+                <label class="control">
                   <input class="control-input" type="checkbox" name="wifi">Wi-Fi
+                </label>
               </li>
             </ul>
           </fieldset>
@@ -85,14 +92,20 @@
             <legend class="catalog-filter-title">Тип Жилья:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
+                <label class="control">
                   <input class="control-input" type="radio" name="housing" value="hostel" checked="checked">Гостиница
-              </li>
+                </label>
+                </li>
               <li class="catalog-filter-item">
+                <label class="control">
                   <input class="control-input" type="radio" name="housing" value="motel">Мотель
+                </label>
               </li>
               <li class="catalog-filter-item">
+                <label class="control">
                   <input class="control-input" type="radio" name="housing" value="apartment">Апартаменты
-              </li>
+                </label>
+                </li>
             </ul>
           </fieldset>
 
@@ -241,9 +254,10 @@
         </section>
         <section class="footer-logo">
           <a class="footer-logo-link" href="https://htmlacademy.ru/">
-            <img class="logo" src="images/icons/footer logo.svg" width="115" height="33" alt="Логотип html.academy">
+            <img class="logo" src="images/icons/footer-logo.png" width="115" height="33" alt="Логотип html.academy">
           </a>
         </section>
       </footer>
+    </div>
     </body>
     </html>
