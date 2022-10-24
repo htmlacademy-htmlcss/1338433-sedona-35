@@ -37,7 +37,7 @@
                 <span class="visually-hidden">
                   Понравилось
                 </span>
-                <span class="favorite-count">12</span>
+                <!--<span class="favorite-count">12</span>-->
               </a>
             </li>
             <li class="navigation-item">
@@ -52,7 +52,7 @@
     <main class="main-catalog main-container">
         <section class="filters">
             <h1 class="main-title">Гостиницы Седоны</h1>
-            <ol class="breadcrumbs">
+            <ul class="breadcrumbs">
                 <li class="breadcrumbs-item">
                     <a class="breadcrumbs-link" href="index.html">
                         <img class="breadcrumbs-icon" src="images/icons/home-catalog.svg" alt="На главную страницу">
@@ -63,7 +63,7 @@
                     Гостиницы
                   </a>
               </li>
-            </ol>
+            </ul>
 
         <h2 class="visually-hidden">Фильтры</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
@@ -124,11 +124,12 @@
       </section>
 
         <section class="offer">
-          <h3 class="visually-hidden">Найденные гостиницы</h3>
-            <span class="offer-title">Гостиницы Седоны: 38</span>
+          <h3 class="visually-hidden">Гостиницы Седоны</h3>
+          <div class="offer-menu">
+            <span class="offer-title">Найдено гостиниц: 38</span>
             <select class="select-control" aria-label="Сортировка">
+              <option value="cheap">Сначала дешёвые</option>
               <option value="popular">Сначала популярное</option>
-              <option value="cheap">Сначала дешёвое</option>
               <option value="expensive">Сначала дорогое</option>
             </select>
 
@@ -141,7 +142,7 @@
             <a class="button-list" href="#">
               <span class="visually-hidden">Список</span>
             </a>
-
+          </div>
             <ul class="hotel-list">
               <li class="hotel-card">
                 <a class="hotel-card-link" href="#">
@@ -163,7 +164,7 @@
                 <span class="hotel-type">Гостиница</span>
                 <span class="hotel-price">От 5000 ₽</span>
                 <a class="hotel-card-button button" href="#">подробнее</a>
-                <button class="hotel-button-favorites button" type="button">в избранное</button>
+                <button class="hotel-button-favorites button" type="button">в избранном</button>
                 <span class="raiting">Рейтинг: 9,2</span>
               </li>
 
@@ -191,7 +192,7 @@
                 <span class="raiting">Рейтинг: 5,0</span>
               </li>
             </ul>
-
+            
             <ul class="pagination">
               <li class="pagination-item">
                 <a class="pagination-link pagination-current">1</a>
@@ -205,8 +206,8 @@
               <li class="pagination-item">
                 <a class="pagination-link">4</a>
               </li>
-              <li class="pagination-item">
-                ...
+              <li class="pagination-item-li">
+                <span>...</span>
               </li>
               <li class="pagination-item">
                 <a class="pagination-link">10</a>
@@ -226,6 +227,7 @@
     </main>
 
     <footer class="page-footer">
+      <div class="footer-container">
         <section class="footer-social">
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="footer-social-list">
@@ -246,18 +248,21 @@
             </li>
           </ul>
         </section>
+
         <section class="footer-contact">
           <h2 class="visually-hidden">Телефон</h2>
           <address class="footer-contacts-address">
             <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
           </address>
         </section>
+
         <section class="footer-logo">
           <a class="footer-logo-link" href="https://htmlacademy.ru/">
-            <img class="logo" src="images/icons/footer-logo.png" width="115" height="33" alt="Логотип html.academy">
+            <img class="page-footer-logo" src="images/icons/footer-logo.png" width="115" height="33" alt="Логотип html.academy">
           </a>
         </section>
-      </footer>
+      </div>
+    </footer>
     </div>
     </body>
     </html>
