@@ -10,32 +10,34 @@
     <div class="container">
       <header class="page-header">
         <nav class="navigation">
-          <a class="navigation-logo" href="index.html">
-            <img class="logo" src="images/icons/logo.png" alt="Логотип Седона" width="139" height="70">
+
+          <a class="navigation-logo-link" href="index.html">
+            <img class="navigation-logo" src="images/icons/logo.png" alt="Логотип Седона" width="139" height="70">
           </a>
+
           <ul class="navigation-list">
-            <li class="navigation-item">
+            <li>
               <a class="navigation-link navigation-link-main-current" href="#">Главная</a>
             </li>
-            <li class="navigation-item">
+            <li>
               <a class="navigation-link" href="#">О Седоне</a>
             </li>
-            <li class="navigation-item">
+            <li>
               <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
 
-          <ul class="navigation-list navigation-user">
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">
+          <ul class="navigation-user">
+            <li>
+              <a class="navigation-user-link navigation-user-search" href="#">
                 <svg class="navigation-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="20" height="20" fill="currentColor" viewbox="0 0 20 20"><path d="m19.5 18.008-3.7-3.68c1-1.292 1.7-2.983 1.7-4.872 0-4.376-3.6-7.956-8-7.956s-8 3.68-8 8.055c0 4.376 3.6 7.956 8 7.956 1.8 0 3.5-.597 4.9-1.69l3.7 3.679 1.4-1.492Zm-10-2.486c-3.3 0-6-2.685-6-5.967 0-3.282 2.7-5.967 6-5.967s6 2.685 6 5.967c0 3.282-2.7 5.967-6 5.967Z"/></svg>
                 <span class="visually-hidden">
                   Поиск
                 </span>
               </a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">
+            <li>
+              <a class="navigation-link navigation-user-like" href="#">
                 <svg class="navigation-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="20" height="20"  fill="currentColor" viewbox="0 0 20 20"><path  d="M9.9 19c-.3 0-.6-.1-.8-.4-5.4-6.1-6.7-7.5-7-7.9C1.4 9.8 1 8.6 1 7.4 1 4.4 3.4 2 6.5 2 7.8 2 9 2.5 10 3.3c1-.8 2.3-1.3 3.5-1.3 3 0 5.5 2.4 5.5 5.4 0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/></svg>
                 <span class="visually-hidden">
                   Понравилось
@@ -43,7 +45,7 @@
                 <span class="favorite-count">12</span>
               </a>
             </li>
-            <li class="navigation-item ">
+            <li>
               <a class="button-click" href="#">
                   Хочу сюда!
               </a>
@@ -166,6 +168,73 @@
           </a>
         </section>
     </footer>
+
+    <div class="modal-container modal-disabled">
+      <div class="modal">
+        <button class="modal-close-button">
+          <svg width="21" height="21" viewBox="0 0 21 21" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+            <path d="m17.5 4.8-1.3-1.3-5.7 5.7-5.7-5.7-1.3 1.3 5.7 5.7-5.7 5.7 1.3 1.3 5.7-5.7 5.7 5.7 1.3-1.3-5.7-5.7 5.7-5.7Z" />
+          </svg>
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-header hotel-title">Поиск гостиницы в Седоне</h2>
+          <form class="modal-form" method="post" action="https://echo.htmlacademy.ru/">
+
+            <label class="modal-form-label" for="data-in">Дата заезда:</label>
+            <input class="modal-data" type="text" id="data-in" placeholder="Укажите дату" name="data-in" value="27 апреля 2020" required>
+            <p class="modal-form-error">Мы не можем отправить вас в прошлое.</p>
+
+            <label class="modal-form-label" for="data-out">Дата выезда:</label>
+            <input class="modal-data" type="text" id="data-out" placeholder="Укажите дату" name="data-out" value="1 сентября 2023" required>
+            <p class="modal-form-message">На эти даты есть свободные номера. Пока есть.</p>
+
+            <label class="modal-form-label" for="grown-count">Взрослые:</label>
+
+            <div class="modal-count">
+              <button type="button" class="modal-count-button">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 9v2h14V9H3Z" />
+                </svg>
+              </button>
+              <input class="modal-count-number" type="number" min="0" value="2" id="grown-count" name="grown-count">
+              <button type="button" class="modal-count-button">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
+                </svg>
+              </button>
+            </div>
+            <div class="modal-form-children modal-form-label">
+              <label for="children-count">Дети:</label>
+              <div class="modal-link-info" tabindex="0">
+                <svg class="modal-info-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4h2v2H9V4Zm2 12H9V7h2v9Z" fill="#fff" />
+                </svg>
+                <div class="modal-info">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет.Дети до 6 лет размещаются бесплатно.
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-count">
+              <button type="button" class="modal-count-button">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 9v2h14V9H3Z" />
+                </svg>
+              </button>
+              <input class=" modal-count-number" type="number" min="0" value="2" id="children-count" name="children-count">
+              <button type="button" class="modal-count-button">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
+                </svg>
+              </button>
+            </div>
+
+            <button class="modal-submit-button" type="submit">Найти</button>
+
+          </form>
+        </section>
+      </div>
+
     </div>
   </body>
 </html>
