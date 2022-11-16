@@ -117,6 +117,8 @@ img {
   cursor: pointer;
   border: none;
   margin: 0 16px;
+  position: relative;
+
 }
 
 .navigation-link-main-current::before {
@@ -127,10 +129,6 @@ img {
   background-color: #756257;
   bottom: 0;
   display: block;
-}
-
-.navigation-list-li {
-  position: relative;
 }
 
 .navigation-link-hostel-current::before {
@@ -145,6 +143,8 @@ img {
 
 .navigation-user-like {
   position: relative;
+  padding-top: 22px;
+  margin-right: 13px;
 }
 
 .favorite-count {
@@ -435,6 +435,11 @@ img {
   padding: 12px 20px;
   border-radius: 4px 0 0 4px;
   border: none;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .button-subscribe {
@@ -937,7 +942,7 @@ img {
 }
 
 .button-list {
-  width: 40px;
+  width: 48px;
   height: 48px;
   border: 2px solid #e5e5e5;
   display: flex;
@@ -1165,7 +1170,7 @@ img {
 .modal {
   position: relative;
   width: 717px;
-  height: 576px;
+  min-height: 576px;
   margin: auto;
   padding: 64px 70px;
   background: #ffffff;
@@ -1214,7 +1219,7 @@ img {
 .modal-form {
   display: grid;
   grid-template-columns: 138px 109px 88px 131px 111px;
-  grid-template-rows: repeat(6, 48px) 60px;
+  grid-template-rows: repeat(6, minmax(48px, auto)) 60px;
 }
 
 .modal-form-label {
